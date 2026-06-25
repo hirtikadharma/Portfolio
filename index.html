@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirtika Dharma — UI/UX Designer & Frontend Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=11">
+</head>
+
+<body>
+    <div id="custom-cursor"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="site-nav" id="nav" style="background: #FFFFFF;">
+        <div class="container nav-container"
+            style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="nav-dots" style="display: flex; gap: 4px;">
+                <span style="width: 8px; height: 8px; background-color: #1a1f3c; border-radius: 50%;"></span>
+                <span style="width: 8px; height: 8px; background-color: #1a1f3c; border-radius: 50%;"></span>
+                <span style="width: 8px; height: 8px; background-color: #1a1f3c; border-radius: 50%;"></span>
+            </div>
+            <a href="#" class="nav-logo" style="display: none;">H·D</a>
+            <ul class="nav-links" style="gap: 4vw; margin: 0 auto;">
+                <li><a href="#hero" class="nav-link active">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+                <li><a href="#work" class="nav-link">WORK</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="nav-hamburger" aria-label="Menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="new-hero white-theme">
+        <!-- Cinematic dark overlay for scroll transition -->
+        <div class="hero-dark-overlay"></div>
+
+        <div class="hero-left-text">
+            Computer Science graduate<br>
+            blending UI/UX expertise<br>
+            with AI & frontend to<br>
+            build products people love
+        </div>
+
+        <div class="hero-bg-portfolio">
+            HIRTIKA DHARMA
+            <div class="star-icon">
+                <svg viewBox="0 0 24 24" fill="#cc2200" width="65" height="65">
+                    <path
+                        d="M11 0h2v9.5l6.7-6.7 1.4 1.4-6.7 6.7H24v2h-9.5l6.7 6.7-1.4 1.4-6.7-6.7V24h-2v-9.5l-6.7 6.7-1.4-1.4 6.7-6.7H0v-2h9.5l-6.7-6.7 1.4-1.4 6.7 6.7V0z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="hero-portrait-new">
+            <img src="assets/profile.png" alt="Hirtika Dharma" loading="lazy" />
+        </div>
+
+        <div class="hero-right-cta">
+            <a href="Hirtika_Resume.pdf" class="btn-primary" download
+                style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                Download Resume
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </a>
+        </div>
+
+        <div class="hero-bottom-left">
+            <h2><a href="https://hirtikadharma.in" style="text-decoration: none; color: inherit;"
+                    target="_blank">HIRTIKADHARMA.IN</a></h2>
+        </div>
+
+        <div class="hero-bottom-right">
+            <a href="https://www.linkedin.com/in/hirtika-dharma/" class="social-icon-clean" target="_blank"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+            <a href="https://github.com/hirtikadharma" class="social-icon-clean" target="_blank" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+            <a href="https://www.behance.net/hirtikadharma" class="social-icon-clean" target="_blank"
+                aria-label="Behance">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.908 4.964 5.772 0 .076-.008.273-.014.333h-7.25c.13 2.016 1.928 3.368 3.447 3.368 1.455 0 2.513-.746 3.003-1.638l2.05.76zm-5.48-5.567c-1.358 0-2.058 1.024-2.202 2.003h4.481c-.086-1.024-.707-2.003-2.279-2.003zm-11.246-3.433h-7v14h7.558c3.228 0 5.698-1.558 5.698-4.721 0-2.433-1.341-3.666-2.531-4.041 1.053-.409 2.083-1.544 2.083-3.513 0-2.585-1.921-3.725-5.808-3.725zm-4.73 11.456v-3.754h2.247c1.378 0 2.454.407 2.454 1.895 0 1.544-1.123 1.859-2.493 1.859h-2.208zm0-5.84v-3.32h2.091c1.286 0 2.259.271 2.259 1.637 0 1.488-.95 1.683-2.221 1.683h-2.129z" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/hirtikadharma/?hl=en" class="social-icon-clean" target="_blank"
+                aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.169a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+                </svg>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-about" aria-label="About Section">
+        <div class="container about-new-container">
+            <div class="about-new-layout reveal">
+                <!-- Left Column: Text -->
+                <div class="about-new-left">
+                    <div class="about-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+
+                    <div class="about-heading-row">
+                        <h2 class="about-new-title">WHO AM I</h2>
+                        <div class="about-sun-icon">
+                            <svg viewBox="0 0 24 24" fill="var(--color-olive-dark)">
+                                <path
+                                    d="M12 1L13.5 5L17.5 3L16.5 7L21 8.5L17.5 11.5L21 14.5L16.5 16L17.5 20L13.5 18L12 22L10.5 18L6.5 20L7.5 16L3 14.5L6.5 11.5L3 8.5L7.5 7L6.5 3L10.5 5L12 1Z" />
+                                <circle cx="12" cy="11.5" r="3.5" fill="#FFFFFF" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="about-text-content">
+                        <p>Detail-oriented Computer Science graduate with strong analytical and problem-solving skills,
+                            passionate about learning new technologies and building practical solutions.</p>
+                        <p>Proficient in SQL, programming fundamentals, and UI/UX design, with hands-on experience as an
+                            AI Design Intern involving AI tools and web-based interfaces. A collaborative and adaptable
+                            individual committed to delivering efficient, accurate, and user-focused solutions in
+                            professional environments.</p>
+                    </div>
+
+                    <div class="about-stats-row">
+                        <div class="about-stat">
+                            <h3>8.43</h3>
+                            <p>CGPA</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3>4+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="about-stat">
+                            <h3>1</h3>
+                            <p>Internship</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Education -->
+                <div class="about-new-right about-education-column">
+                    <h3 class="education-title">EDUCATION</h3>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>B.E. in Computer Science and Engineering <span class="education-date">(2022–2026)</span>
+                            </h4>
+                        </div>
+                        <p class="education-school">SIES Graduate school of technology, Mumbai university</p>
+                        <p class="education-score">CGPA: <span>8.43 / 10</span></p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>HSC <span class="education-date">(2020–2022)</span></h4>
+                        </div>
+                        <p class="education-school">Ryan international school, Surat</p>
+                        <p class="education-score">Percentage: <span>87%</span></p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>SSC <span class="education-date">(2020)</span></h4>
+                        </div>
+                        <p class="education-school">Sophia High School, Mount Abu</p>
+                        <p class="education-score">Percentage: <span>88%</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section-experience">
+        <div class="container">
+            <div class="experience-header reveal">
+                <span class="overline">EXPERIENCE</span>
+                <h2 class="text-display">Where I've Worked</h2>
+            </div>
+
+            <div class="experience-timeline reveal">
+                <div class="timeline-entry">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2026 – May 2026</div>
+                        <h3 class="timeline-title">E2M Solutions Pvt Ltd</h3>
+                        <div class="timeline-role">AI Intern (Design)</div>
+                        <ul class="timeline-list">
+                            <li>Designed user interfaces in Figma focused on usability and accessibility</li>
+                            <li>Used AI tools: Gemini, Google AI Studio, Claude, Cursor, Antigravity</li>
+                            <li>Generated design components and optimized workflows via prompt engineering</li>
+                            <li>Evaluated AI outputs and refined designs for intuitive navigation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK SECTION -->
+    <section id="work" class="section-work" aria-label="Work Section">
+
+        <div class="projects-sticky-header">
+            <h2 class="text-display">PROJECTS</h2>
+        </div>
+
+        <div class="projects-stack-container">
+            <!-- Project 1 -->
+            <div class="project-band card-1">
+                <div class="case-study-card">
+                    <div class="case-image-col">
+                        <img src="./images_projects/amazon_image.jpg" alt="Data Scraper Interface" loading="lazy">
+                    </div>
+                    <div class="case-content-col">
+                        <div class="case-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="case-header">
+                            <h2 class="case-title-bold" style="font-size: 56px;">AMAZON REVIEW</h2>
+                            <span class="case-title-cursive" style="left: 216px;">Scraper</span>
+                        </div>
+                        <ul class="case-description">
+                            <li>Full-stack Amazon review scraper built using Python, Playwright, FastAPI, and React.
+                            </li>
+                            <li>Extracted 1,000+ reviews per product through a custom pagination strategy.</li>
+                            <li>Implemented real-time progress tracking, CAPTCHA handling, and CSV/Excel exports.</li>
+                        </ul>
+                        <div class="case-actions">
+                            <a href="#" class="case-btn" target="_blank">View on GitHub →</a>
+                        </div>
+                        <div class="case-sparkles">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"
+                                    fill="var(--color-primary)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-band card-2">
+                <div class="case-study-card">
+                    <div class="case-image-col">
+                        <img src="./images_projects/malware_image.jpg" alt="Security Code" loading="lazy">
+                    </div>
+                    <div class="case-content-col">
+                        <div class="case-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="case-header">
+                            <h2 class="case-title-bold">MALWARE</h2>
+                            <span class="case-title-cursive">Detection</span>
+                        </div>
+                        <ul class="case-description">
+                            <li>Machine learning-based malware detection system for classifying files as benign or
+                                malicious using static analysis.</li>
+                            <li>Led feature engineering, model training, and evaluation efforts across multiple
+                                classifiers.</li>
+                            <li>Built automated pipelines for data processing and offline malware detection.</li>
+                        </ul>
+                        <div class="case-actions">
+                            <a href="#" class="case-btn" target="_blank">View on GitHub →</a>
+                        </div>
+                        <div class="case-sparkles">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"
+                                    fill="var(--color-primary)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-band card-3">
+                <div class="case-study-card">
+                    <div class="case-image-col">
+                        <img src="./images_projects/knowledge_image.jpg" alt="AI Interface" loading="lazy">
+                    </div>
+                    <div class="case-content-col">
+                        <div class="case-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="case-header">
+                            <h2 class="case-title-bold" style="font-size: 56px;">KNOWLEDGE</h2>
+                            <span class="case-title-cursive">Base</span>
+                        </div>
+                        <ul class="case-description">
+                            <li>AI-powered assistant built using Python, LangGraph, RAG, and ChromaDB.</li>
+                            <li>Automates email workflows for seamless communication and SMTP integration.</li>
+                            <li>Optimized knowledge bases for improved response relevance and system performance.</li>
+                        </ul>
+                        <div class="case-actions">
+                            <a href="#" class="case-btn" target="_blank">View on GitHub →</a>
+                        </div>
+                        <div class="case-sparkles">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"
+                                    fill="var(--color-primary)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-band card-4">
+                <div class="case-study-card">
+                    <div class="case-image-col">
+                        <img src="./images_projects/splitter_image.png" alt="App Design Concept" loading="lazy">
+                    </div>
+                    <div class="case-content-col">
+                        <div class="case-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="case-header">
+                            <h2 class="case-title-bold">SPLITTER</h2>
+                            <span class="case-title-cursive">App</span>
+                        </div>
+                        <ul class="case-description">
+                            <li>Designed a mobile UI/UX for simplifying how people split and settle shared expenses.
+                            </li>
+                            <li>Features real-time receipt scanning and seamless UPI payment integration.</li>
+                            <li>Focused purely on the UI/UX design layer inside Figma for a clean experience.</li>
+                        </ul>
+                        <div class="case-actions">
+                            <a href="https://www.behance.net/gallery/230700523/Splitter-an-expense-splitting-app"
+                                class="case-btn" target="_blank">View on Behance →</a>
+                        </div>
+                        <div class="case-sparkles">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"
+                                    fill="var(--color-primary)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of .projects-stack-container -->
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-skills" aria-label="Skills Section" style="padding-top: 24px;">
+        <div class="container">
+            <div class="rate-card-container" style="max-width: 1100px; margin: 0 auto; position: relative;">
+
+                <!-- Decorative Stars -->
+                <!-- Bottom Left Stars -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="#b71c1c" stroke-width="1.5" stroke-linecap="round"
+                    style="position: absolute; bottom: -24px; left: -40px; width: 48px; height: 48px; z-index: 10;">
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                    <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#b71c1c" stroke-width="1.5" stroke-linecap="round"
+                    style="position: absolute; bottom: -32px; left: 16px; width: 24px; height: 24px; z-index: 10;">
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                    <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
+                </svg>
+                <!-- Top Right Stars -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="#b71c1c" stroke-width="1.5" stroke-linecap="round"
+                    style="position: absolute; top: 70px; right: -24px; width: 36px; height: 36px; z-index: 10;">
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                    <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#b71c1c" stroke-width="1.5" stroke-linecap="round"
+                    style="position: absolute; top: 110px; right: -48px; width: 20px; height: 20px; z-index: 10;">
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                    <line x1="4.93" y1="19.07" x2="19.07" y2="4.93" />
+                </svg>
+
+                <div class="skills-header reveal" style="text-align: center; margin-bottom: 24px; position: relative;">
+                    <div style="position: absolute; top: 10px; right: 0; display: flex; gap: 6px;">
+                        <span style="width: 8px; height: 8px; background-color: #1c2a43; border-radius: 50%;"></span>
+                        <span style="width: 8px; height: 8px; background-color: #1c2a43; border-radius: 50%;"></span>
+                        <span style="width: 8px; height: 8px; background-color: #1c2a43; border-radius: 50%;"></span>
+                    </div>
+                    <h2 class="text-display"
+                        style="font-family: 'Bebas Neue', sans-serif; font-size: 64px; color: #1c2a43; letter-spacing: 2px; margin: 0; line-height: 1;">
+                        TOOLS & TECHNOLOGIES</h2>
+                </div>
+
+                <div class="grid-3 reveal" style="transition-delay: 100ms;">
+
+                    <!-- Card 1 -->
+                    <div class="skill-card">
+                        <h3 class="skill-cat">PROGRAMMING & TOOLS</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Git</li>
+                            <li>Prompt Engineering</li>
+                            <li>Power BI</li>
+                            <li>Excel</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="skill-card">
+                        <h3 class="skill-cat">DESIGN</h3>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>UX Research</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="skill-card">
+                        <h3 class="skill-cat">SOFT SKILLS</h3>
+                        <ul class="skill-list">
+                            <li>Teamwork</li>
+                            <li>Adaptability</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-contact" aria-label="Contact Section">
+
+        <div class="container grid-2">
+
+            <div class="contact-form-col reveal">
+                <div class="contact-intro">
+                    <span class="overline">CONTACT</span>
+                    <h2 class="text-display" style="font-size: clamp(32px, 4vw, 52px); margin-bottom: 8px;">Let's Work
+                        Together</h2>
+                    <p class="text-body" style="color: var(--color-text-secondary);">Have a project, an idea, or just
+                        want to connect? I'd love to hear from you.</p>
+                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/hirtikadharmawork@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address"
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                                title="Please enter a valid email address (must include @)" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="_subject" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-card-col reveal" style="transition-delay: 200ms;">
+                <div class="contact-card">
+                    <h3 class="contact-card-title">Get In Touch</h3>
+
+                    <div class="contact-info-list">
+                        <div class="contact-info-row">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value"><a
+                                        href="mailto:hirtikadharmawork@gmail.com">hirtikadharmawork@gmail.com</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-info-row">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 9016288070</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-row">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Navi Mumbai, Maharashtra, India</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-row" style="border-bottom: none;">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value"><a href="https://www.linkedin.com/in/hirtika-dharma/"
+                                        target="_blank">linkedin.com/in/hirtika-dharma</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-availability">
+                        <div class="avail-chips">
+                            <span class="avail-chip">UI/UX Design Projects</span>
+                            <span class="avail-chip">Frontend Development</span>
+                            <span class="avail-chip">AI Design Consulting</span>
+                        </div>
+                        <p class="avail-note">Currently open to full-time roles and freelance projects.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer" style="background: black !important; background-color: black !important;">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="footer-logo">H·D</div>
+
+                <nav class="footer-nav">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#work">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Hirtika Dharma. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://dribbble.com" target="_blank" aria-label="Dribbble">Dribbble</a>
+                    <a href="https://www.behance.net/hirtikadharma" target="_blank" aria-label="Behance">Behance</a>
+                    <a href="https://www.linkedin.com/in/hirtika-dharma/" target="_blank"
+                        aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/hirtikadharma" target="_blank" aria-label="GitHub">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cinematic scroll progress indicator -->
+    <div class="scroll-progress-line"></div>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
